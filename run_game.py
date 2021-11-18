@@ -4,8 +4,18 @@ import random as r
 from colorama.initialise import init
 os.system("clear")
 
-user_cups = int(input("how many cups: "))
-user_chances = int(input("how many chances: "))
+def get_name():
+
+    user_name = input("Enter your name: ")
+
+    return user_name
+
+name = get_name()
+
+print(f'Hello! {name} welcome to your project this Game')
+
+user_cups = int(input("\nhow many cups: "))
+user_chances = int(input("\nhow many chances: "))
 
 ai_chances = r.randint(1, user_cups)
 
